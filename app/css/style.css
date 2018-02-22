@@ -1,0 +1,24 @@
+.container{
+    margin-top: 30px;
+}
+
+.nav-item{
+    padding-bottom: 10px;
+}
+
+#navlogo{
+    color: white;
+    font-weight: bold;
+}
+
+#text-input{
+    padding-bottom: 100px;
+}
+
+a{
+    text-decoration: none !important;
+}
+
+#side_nav li a{
+    cursor: pointer;
+}

@@ -1,0 +1,32 @@
+<div class="row">
+    <div class="col-md-2">
+        <ul class="nav nav-pills flex-column" id="side_nav">
+            <li class="nav-item"><a class="nav-link active" href="#/">Home</a></li>
+            <li class="nav-item"><a class="nav-link active" href="#/addPost">Add Post</a></li>
+        </ul>
+    </div>
+    <div class="col-md-10">
+        <div ng-controller="postsCtrl">
+            <table class="table table-striped">
+              <thead class="thead-inverse">
+                <tr>
+                  <th>Title</th>
+                  <th>Post</th>
+                  <th>Date</th>
+                  <th>Delete</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr ng-repeat="post in posts.info">
+                  <td>{{post.title}}</td>
+                  <td>{{post.content}}</td>
+                  <td>{{post.date}}</td>
+                  <td><a ng-href="#/delete/{{post.id}}" class="glyphicon glyphicon-remove" aria-hidden="true"></a></td>
+                </tr>
+              </tbody>
+            </table>
+        </div>
+        
+    </div>
+    
+</div>
